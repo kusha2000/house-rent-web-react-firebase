@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import signInLogo from '../assets/signIn.jpg';
 import {AiFillEyeInvisible,AiFillEye} from "react-icons/ai"
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import OAuth from '../components/OAuth';
+import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
+import { toast } from 'react-toastify';
 
 
 const SignIn = () => {
@@ -14,11 +16,27 @@ const SignIn = () => {
 
   const {email,password}=formData
 
+  const navigate=useNavigate()
+
   function onChange(e){
     setFormData((pre)=>({
       ...pre,
       [e.target.id]:e.target.value
     }))
+  }
+  async function onSubmit(e){
+    e.preventDefault()
+    try {
+      const auth=getAuth()
+      const userCredential=await signInWithEmailAndPassword(auth,email,password)
+      if(userCredential.user){
+        navigate("/")
+      }
+
+    } catch (error) {
+      toast.error("user credentials are wrong")
+      console.error("Error signing in", error);
+    }
   }
 
 
@@ -30,7 +48,7 @@ const SignIn = () => {
           <img src={signInLogo} alt="SignIn" className='w-full rounded-2xl'></img>
         </div>
         <div className='w-full md:w-[67%] lg:w-[40%] lg:ml-20'>
-          <form >
+          <form onSubmit={onSubmit}>
             <input type="email" id="email" value={email} onChange={onChange} placeholder='Email Address' className='mb-6 w-full px-4 py-2 text-xl text-gray-700 bg-white border-grey-300 rounded transition ease-in-out'/>
             <div className='relative mb-6'>
               <input type={showPassword ? "text" : "password"} id="password" value={password} onChange={onChange} placeholder='Password' className='w-full px-4 py-2 text-xl text-gray-700 bg-white border-grey-300 rounded transition ease-in-out'/>

@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import forgotLogo from '../assets/forgot.jpg';
 import { Link } from 'react-router-dom';
 import OAuth from '../components/OAuth';
+import { toast } from 'react-toastify';
+import { getAuth, sendPasswordResetEmail } from 'firebase/auth';
 
 
 const ForgotPassword = () => {
@@ -9,6 +11,17 @@ const ForgotPassword = () => {
 
   function onChange(e){
     setEmail(e.target.value)
+  }
+
+  async function onSubmit(e){
+    e.preventDefault()
+    try {
+      const auth=getAuth()
+      await sendPasswordResetEmail(auth,email)
+      toast.success("Email Send")
+    } catch (error) {
+      toast.error("Could not send reset password")
+    }
   }
 
 
@@ -20,7 +33,7 @@ const ForgotPassword = () => {
           <img src={forgotLogo} alt="SignIn" className='w-full rounded-2xl'></img>
         </div>
         <div className='w-full md:w-[67%] lg:w-[40%] lg:ml-20'>
-          <form >
+          <form onSubmit={onSubmit}>
             <input type="email" id="email" value={email} onChange={onChange} placeholder='Email Address' className='mb-6 w-full px-4 py-2 text-xl text-gray-700 bg-white border-grey-300 rounded transition ease-in-out'/>
             
             <div className='flex justify-between whitespace-nowrap text-sm sm:text-lg'>
