@@ -24,7 +24,7 @@ Technologies Used
 ![Demo](https://github.com/kusha2000/house-rent-web-react-firebase/assets/127003267/c1babfa1-6333-41ee-a3ca-e961594c656a)
 
 <br><br>
-<h1>This is the screenshot of my App</h1><br><br>
+<h1>This is the screenshots of the system</h1><br><br>
 
 ![1](https://github.com/kusha2000/house-rent-web-react-firebase/assets/127003267/241a707b-fad2-49b2-997a-c4b3d590361b)<br><br>
 ![2](https://github.com/kusha2000/house-rent-web-react-firebase/assets/127003267/c21faf87-6b79-4ed5-a163-25af3e07392e)<br><br>
