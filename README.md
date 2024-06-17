@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# House Sell or Rent React Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a feature-rich house selling or renting application built with React, Firebase, and styled using Tailwind CSS. Inspired by Realtor.com, this application allows users to browse, list, and manage properties for sale or rent.
 
-## Available Scripts
+Features
 
-In the project directory, you can run:
+<ul>
+<li>User Authentication: Users can register, log in, and use the forgot password option. Google Sign-In is also available for quick access.</li>
+<li>Home Page: Displays a list of houses available for sale or rent along with current offers.</li>
+<li>House Details: Users can view comprehensive details of each house, including viewing the location on a map using Geo API.</li>
+<li>Add Houses: Users can list their properties for sale or rent by entering detailed information.</li>
+</ul>
 
-### `npm start`
+Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<ul>
+<li>React: For building the interactive user interface.</li>
+<li>Firebase: For real-time database, backend support, and user authentication.</li>
+<li>Tailwind CSS: For modern, responsive styling.</li>
+</ul>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<h1>This is the Full Demo of the project</h1>
 
-### `npm test`
+![Demo](https://github.com/kusha2000/house-rent-web-react-firebase/assets/127003267/c1babfa1-6333-41ee-a3ca-e961594c656a)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br><br>
+<h1>This is the screenshot of my App</h1><br><br>
 
-### `npm run build`
+![1](https://github.com/kusha2000/house-rent-web-react-firebase/assets/127003267/241a707b-fad2-49b2-997a-c4b3d590361b)<br><br>
+![2](https://github.com/kusha2000/house-rent-web-react-firebase/assets/127003267/c21faf87-6b79-4ed5-a163-25af3e07392e)<br><br>
+![3](https://github.com/kusha2000/house-rent-web-react-firebase/assets/127003267/6a0ee3bc-2256-4544-81b6-493affbc039d)<br><br>
+![4](https://github.com/kusha2000/house-rent-web-react-firebase/assets/127003267/93a829af-3206-4823-880b-054de6201b59)<br><br>
+![5](https://github.com/kusha2000/house-rent-web-react-firebase/assets/127003267/5ab7d05c-a66f-4285-b77e-8531e6e2632f)<br><br>
+![6](https://github.com/kusha2000/house-rent-web-react-firebase/assets/127003267/18cb77db-3540-4860-905d-e143111a9e9c)<br><br>
+![7](https://github.com/kusha2000/house-rent-web-react-firebase/assets/127003267/0d493dfb-66cc-4698-957f-c3cf17b37f79)<br><br>
+![8](https://github.com/kusha2000/house-rent-web-react-firebase/assets/127003267/214c33c6-b218-4ea5-a43a-d2428b8e39aa)<br><br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
