@@ -2,26 +2,30 @@
 
 This is a feature-rich house selling or renting application built with React, Firebase, and styled using Tailwind CSS. Inspired by Realtor.com, this application allows users to browse, list, and manage properties for sale or rent.
 
-Features
-
+<h3><u>Technologies Used</u></h3>
 <ul>
-<li>User Authentication: Users can register, log in, and use the forgot password option. Google Sign-In is also available for quick access.</li>
-<li>Home Page: Displays a list of houses available for sale or rent along with current offers.</li>
-<li>House Details: Users can view comprehensive details of each house, including viewing the location on a map using Geo API.</li>
-<li>Add Houses: Users can list their properties for sale or rent by entering detailed information.</li>
+🔹 React<br>
+🔹 Firebase<br>
+🔹 Tailwind CSS<br>
 </ul>
 
-Technologies Used
-
+<h3><u>Features</u></h3>
 <ul>
-<li>React: For building the interactive user interface.</li>
-<li>Firebase: For real-time database, backend support, and user authentication.</li>
-<li>Tailwind CSS: For modern, responsive styling.</li>
+✅ User Authentication: Users can register, log in, and use the forgot password option. Google Sign-In is also available for quick access.<br>
+✅ Home Page: Displays a list of houses available for sale or rent along with current offers.<br>
+✅ House Details: Users can view comprehensive details of each house, including viewing the location on a map using Geo API.<br>
+✅ Add Houses: Users can list their properties for sale or rent by entering detailed information.<br>
 </ul>
+
+
 
 <h1>This is the Full Demo of the project</h1>
 
-![Demo](https://github.com/kusha2000/house-rent-web-react-firebase/assets/127003267/c1babfa1-6333-41ee-a3ca-e961594c656a)
+
+
+https://github.com/user-attachments/assets/c03e2c18-f3a0-4679-9f5d-9819d8474625
+
+
 
 <br><br>
 <h1>This is the screenshots of the system</h1><br><br>
